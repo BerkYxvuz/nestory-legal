@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nestory Support</title>
+<style>
+  :root {
+    --ground: #F4F4F3;
+    --paper: #FFFFFF;
+    --wine: #2F4C86;
+    --ink: #17181A;
+    --ink-soft: #7A7D82;
+    --line: rgba(23,24,26,.13);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 64px 24px 80px; }
+  header { margin-bottom: 40px; }
+  .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; }
+  .brand-dot { width: 10px; height: 10px; border-radius: 999px; background: var(--wine); }
+  .brand-name { font-weight: 700; font-size: 15px; letter-spacing: .02em; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  .sub { color: var(--ink-soft); font-size: 15px; margin: 0; }
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card h2 { font-size: 16px; margin: 0 0 8px; }
+  .card p { color: var(--ink-soft); font-size: 14.5px; margin: 0; }
+  .card p + p { margin-top: 10px; }
+  a { color: var(--wine); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .contact {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: var(--wine);
+    color: #fff;
+  }
+  .contact:hover { text-decoration: none; opacity: .9; }
+  nav.links { margin-top: 40px; display: flex; gap: 20px; font-size: 14px; }
+  footer { margin-top: 48px; color: var(--ink-soft); font-size: 12.5px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><span class="brand-dot"></span><span class="brand-name">NESTORY</span></div>
+      <h1>Support</h1>
+      <p class="sub">Answers to common questions, and how to reach us.</p>
+    </header>
+
+    <div class="card">
+      <h2>Photos disappeared from a memory</h2>
+      <p>Nestory never copies your photos — it references them directly from your device's photo library. If a photo no longer appears in a memory, either it was deleted from your gallery, or Nestory's Photos permission was turned off in your device Settings. Re-enabling the permission restores access to any photos still in your library.</p>
+    </div>
+
+    <div class="card">
+      <h2>My memories aren't backing up</h2>
+      <p>On iOS, memories back up automatically to your own iCloud account (your app's private iCloud container) once you're signed into iCloud on your device — there's no separate sign-in inside Nestory. If backup isn't happening, check that iCloud Drive is enabled for your device and that you have available iCloud storage.</p>
+      <p>On Android, cloud backup is not available yet; memories currently stay on-device only.</p>
+    </div>
+
+    <div class="card">
+      <h2>Can I sync between an iPhone and an Android device?</h2>
+      <p>Not currently. iOS and Android use separate, unrelated cloud ecosystems (iCloud and Google Drive), and Nestory does not bridge them.</p>
+    </div>
+
+    <div class="card">
+      <h2>How do I delete a memory or all my data?</h2>
+      <p>Delete individual memories from within the app. Uninstalling the app removes all local data from your device; your iCloud backup, if any, can be managed or removed from your device's iCloud storage settings, since it lives in your own account.</p>
+    </div>
+
+    <div class="card">
+      <h2>Still need help?</h2>
+      <p>Email us and we'll get back to you.</p>
+      <p><a class="contact" href="mailto:berkyxvuz@gmail.com">berkyxvuz@gmail.com</a></p>
+    </div>
+
+    <nav class="links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+    </nav>
+
+    <footer>&copy; 2026 Berk Yavuz. Nestory.</footer>
+  </div>
+</body>
+</html>
